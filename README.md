@@ -98,6 +98,9 @@
 3. Breadcrumbs → Reconstruction du chemin depuis la racine
 4. Déplacement → Mise à jour du `folder_id` des fichiers/dossiers enfants
 
+   <img width="1904" height="988" alt="image" src="https://github.com/user-attachments/assets/e02bae95-f035-436f-a5d0-26b7e6cebade" />
+
+
 ### 🗑️ Gestion de la Corbeille
 
 - ✅ **Soft Delete** : Suppression réversible (marquage `deleted_at`)
@@ -110,6 +113,9 @@
 2. **Corbeille** : Filtrage `WHERE deleted_at IS NOT NULL`
 3. **Restauration** : `deleted_at` = NULL → Fichier réapparaît
 4. **Suppression définitive** : Suppression Azure Blob + Suppression DB
+
+   <img width="1909" height="995" alt="image" src="https://github.com/user-attachments/assets/7863f258-000b-4f21-b386-84a1b8c9551e" />
+
 
 ### 🔗 Partage de Fichiers
 
@@ -124,6 +130,9 @@
 3. URL publique : `/share/{token}`
 4. Accès : Vérification token + expiration + mot de passe si requis
 5. Téléchargement via URL signée Azure
+
+   <img width="1919" height="986" alt="image" src="https://github.com/user-attachments/assets/d6f9a306-6573-4221-8eab-46ac9e982b19" />
+
 
 ### 📊 Dashboard
 
