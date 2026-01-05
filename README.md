@@ -14,6 +14,8 @@
 
 </div>
 
+<img width="1141" height="932" alt="Capture d&#39;écran 2026-01-04 231103" src="https://github.com/user-attachments/assets/10434822-916a-4dab-9656-456d0275edd8" />
+
 ---
 
 ## 📋 Table des Matières
@@ -32,6 +34,11 @@
 ## 🎯 Vue d'ensemble
 
 **SUPFile** est une application web moderne de stockage de fichiers cloud sécurisée, inspirée de Dropbox. Elle permet aux utilisateurs de stocker, organiser, partager et gérer leurs fichiers de manière sécurisée dans le cloud.
+
+
+<img width="1893" height="992" alt="Capture d&#39;écran 2026-01-04 231411" src="https://github.com/user-attachments/assets/956fac15-0330-4e25-9a1c-b6e57627d762" />
+
+
 
 ### ✨ Points Forts
 
