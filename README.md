@@ -342,11 +342,11 @@ Vue d'ensemble du système avec tous les composants (Frontend, Backend, Base de 
 
 Flux complet pour les trois providers OAuth2 (Google, GitHub, Microsoft) avec gestion des tokens temporaires.
 
-![Flux OAuth2 Complet](./Images/3-Flux%20OAuth2%20Complet%20-%20Google%20GitHub%20Microsoft.png)
+![Flux OAuth2 Complet](./Images/3-Flux%20OAuth2%20Complet%20-Google_GitHub_Microsoft.png)    
 
 **Séquence OAuth2 Détaillée - Google** : Séquence détaillée du flux OAuth2 pour Google.
 
-![Séquence OAuth2 Détaillée - Google](./Images/Séquence%20OAuth2%20Détaillée%20-%20Google%20OAuth2.png)
+![Séquence OAuth2 Détaillée - Google](./Images/Séquence%20OAuth2%20Détaillée%20-%20Google%20OAuth2.png)  
 
 #### 📤 Flux d'Upload de Fichier
 
