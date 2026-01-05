@@ -44,6 +44,10 @@
 
 ### ✨ Points Forts
 
+
+<img width="1340" height="730" alt="image" src="https://github.com/user-attachments/assets/0e0406f2-f391-4863-9b79-c175e0a5f0ee" />
+
+
 - 🔐 **Authentification multi-providers** : JWT, OAuth2 (Google, GitHub, Microsoft)
 - 📁 **Gestion complète** : Fichiers, dossiers, corbeille, recherche
 - 🔗 **Partage sécurisé** : Liens publics avec expiration et mot de passe
