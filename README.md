@@ -138,6 +138,10 @@
 3. Fichiers récents : `ORDER BY updated_at DESC LIMIT 10`
 4. Affichage avec graphiques React (Chart.js)
 
+
+   <img width="1919" height="988" alt="image" src="https://github.com/user-attachments/assets/50141f41-bc6f-4c58-a7ea-e3c0014a3075" />
+
+
 ### 💬 Commentaires et Historique
 
 - ✅ **Commentaires** : Commentaires sur fichiers et dossiers
