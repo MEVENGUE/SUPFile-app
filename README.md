@@ -14,6 +14,8 @@
 
 </div>
 
+🌍 Vos fichiers toujours à portée de main : que vous soyez sur PC 💻 ou sur mobile 📱, SUPFile vous offre une expérience continue, sécurisée et intuitive, où que la vie vous mène.
+
 <img width="1141" height="932" alt="Capture d&#39;écran 2026-01-04 231103" src="https://github.com/user-attachments/assets/10434822-916a-4dab-9656-456d0275edd8" />
 
 ---
