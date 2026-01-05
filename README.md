@@ -398,13 +398,13 @@ Architecture multi-niveaux du stockage (PostgreSQL pour métadonnées, Azure Blo
 
 **Schéma Entité-Relation (ERD)** : Modèle complet de la base de données avec toutes les relations.
 
-![Modèle de Données - Schéma Entité-Relation](./Docs_Projet/Images/Modèle%20de%20Données%20-%20Schéma%20Entité-Relation.png "Modèle de Données - Schéma Entité-Relation")
+![Modèle de Données - Schéma Entité-Relation](./Images/Modèle%20de%20Données%20-%20Schéma%20Entité-Relation.png "Modèle de Données - Schéma Entité-Relation")
 
 #### 🔒 Sécurité
 
 **Protection contre les Codes Dupliqués** : Mécanisme de protection contre la réutilisation de codes OAuth2.
 
-![Protection contre les Codes Dupliqués](./Docs_Projet/Images/Protection%20contre%20les%20Codes%20Dupliqués.png "Protection contre les Codes Dupliqués")
+![Protection contre les Codes Dupliqués](./Images/Protection%20contre%20les%20Codes%20Dupliqués.png "Protection contre les Codes Dupliqués")
 
 ---
 
