@@ -20,9 +20,7 @@
 
 <div align="center">
 
-**Interface SUPFile**
-
-*Vue d'ensemble simplifiée de l'architecture SUPFile*
+*Interface SUPFile*
 
 </div>
 
