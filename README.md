@@ -10,11 +10,21 @@
 
 **Système de stockage de fichiers cloud sécurisé** - Projet académique SUPINFO
 
-[🌐 Application Live](https://supfile-webapp.vercel.app) • [📚 Documentation Complète](./Docs_Projet/DOCUMENTATION.md) • [📊 Diagrammes](./Images)
+[🌐 Application Live](https://supfile-webapp.vercel.app) • [📚 Documentation](./Docs_Projet/) • [📄 Guide PDF](./Docs_Projet/Guide%20Dessin%20SUPFile_Architecture_and_Security.pdf) • [📊 Diagrammes](./Images)
 
 </div>
 
 🌍 Vos fichiers toujours à portée de main : que vous soyez sur PC 💻 ou sur mobile 📱, SUPFile vous offre une expérience continue, sécurisée et intuitive, où que la vie vous mène.
+
+### 🖼️ Aperçu de l'Application
+
+<div align="center">
+
+![Interface SUPFile](./Images/Architecture%20SUPFile%20expliquée%20simplement.png)
+
+*Vue d'ensemble simplifiée de l'architecture SUPFile*
+
+</div>
 
 <img width="1141" height="932" alt="Capture d&#39;écran 2026-01-04 231103" src="https://github.com/user-attachments/assets/10434822-916a-4dab-9656-456d0275edd8" />
 
@@ -37,6 +47,17 @@
 
 **SUPFile** est une application web moderne de stockage de fichiers cloud sécurisée, inspirée de Dropbox. Elle permet aux utilisateurs de stocker, organiser, partager et gérer leurs fichiers de manière sécurisée dans le cloud.
 
+> 📄 **Guide Visuel** : Pour une explication détaillée de l'architecture et de la sécurité de SUPFile sous forme de dessins, consultez le [Guide Dessin SUPFile](./Docs_Projet/Guide%20Dessin%20SUPFile_Architecture_and_Security.pdf).
+
+### 📸 Interface Utilisateur
+
+<div align="center">
+
+![Interface Dashboard](./Images/Graphique%20Projet.png)
+
+*Dashboard interactif avec statistiques et visualisations*
+
+</div>
 
 <img width="1893" height="992" alt="Capture d&#39;écran 2026-01-04 231411" src="https://github.com/user-attachments/assets/956fac15-0330-4e25-9a1c-b6e57627d762" />
 
@@ -185,6 +206,14 @@ L'application utilise des ressources visuelles organisées dans le dossier `fron
 
 ### Structure Globale
 
+<div align="center">
+
+![Architecture Globale SUPFile](./Images/1-Architecture%20Globale.png)
+
+*Architecture complète du système SUPFile*
+
+</div>
+
 ```
 ┌─────────────────────────────────────────────────────────┐
 │                    Frontend (Vercel)                    │
@@ -211,7 +240,8 @@ L'application utilise des ressources visuelles organisées dans le dossier `fron
 ```
 SUPFile/
 ├── Docs_Projet/              # Documentation du projet
-│   ├── DOCUMENTATION.md      # Documentation complète
+│   ├── README.md             # Documentation technique complète
+│   ├── Guide Dessin SUPFile_Architecture_and_Security.pdf  # Guide visuel
 │   └── Images/               # Diagrammes d'architecture (PNG)
 │       ├── 1-Architecture Globale.png
 │       ├── 2-Flux d'Authentification - *.png
@@ -309,7 +339,7 @@ alembic upgrade head
 
 ### Installation Manuelle
 
-Voir [DOCUMENTATION.md](./Docs_Projet/DOCUMENTATION.md#installation) pour les instructions détaillées.
+Voir [Documentation Technique](./Docs_Projet/README.md#-installation-et-configuration) pour les instructions détaillées.
 
 ---
 
@@ -330,107 +360,181 @@ Voir [DOCUMENTATION.md](./Docs_Projet/DOCUMENTATION.md#installation) pour les in
 1. Créez un projet Railway
 2. Ajoutez PostgreSQL
 3. Déployez le backend depuis GitHub
-4. Configurez les variables d'environnement (voir [DOCUMENTATION.md](./Docs_Projet/DOCUMENTATION.md#déploiement))
+4. Configurez les variables d'environnement (voir [Documentation Technique](./Docs_Projet/README.md#-déploiement))
 5. Exécutez les migrations : `alembic upgrade head`
 
-📖 **Guide complet** : [DOCUMENTATION.md](./Docs_Projet/DOCUMENTATION.md#déploiement)
+📖 **Guide complet** : [Documentation Technique](./Docs_Projet/README.md#-déploiement)
 
 ---
 
 ## 📚 Documentation
 
-- **[📖 Documentation Complète](./Docs_Projet/DOCUMENTATION.md)** : Architecture, API, sécurité, déploiement
-- **[📊 Diagrammes Mermaid](./Images)** : Diagrammes d'architecture et de flux
-- **[🖼️ Images d'Architecture](./Docs_Projet/Images/)** : Schémas visuels des diagrammes (PNG)
-- **[🔧 Configuration OAuth](./Docs_Projet/DOCUMENTATION.md#oauth2)** : Configuration Google, GitHub, Microsoft
+La documentation complète du projet se trouve dans le dossier **[`Docs_Projet/`](./Docs_Projet/)** :
+
+### 📁 Contenu du Dossier Documentation
+
+- **[📖 README.md](./Docs_Projet/README.md)** : Documentation technique complète expliquant le projet, l'architecture, les fonctionnalités, l'installation, le déploiement, l'API, la sécurité, et tous les diagrammes de flux détaillés
+
+- **[📄 Guide Dessin SUPFile](./Docs_Projet/Guide%20Dessin%20SUPFile_Architecture_and_Security.pdf)** : Guide visuel expliquant l'architecture et la sécurité de l'application SUPFile sous forme de dessins et schémas
+
+### 📊 Ressources Complémentaires
+
+- **[📊 Diagrammes d'Architecture](./Images/)** : Tous les diagrammes d'architecture et de flux (PNG) disponibles à la racine du projet
+- **[🔧 Configuration OAuth](./Docs_Projet/README.md#-authentification-et-oauth2)** : Guide de configuration OAuth2 pour Google, GitHub, Microsoft
 
 ### 📊 Diagrammes d'Architecture
 
-Le dossier `Docs_Projet/Images/` contient les schémas visuels (PNG) des diagrammes Mermaid du projet. Ces images sont des exports des diagrammes Mermaid présents dans [DIAGRAMS.md](./Images) et peuvent être utilisées pour la documentation, les présentations ou la compréhension visuelle de l'architecture.
+> 💡 **Note** : Pour une documentation technique complète avec tous les diagrammes détaillés, consultez le [README de documentation](./Docs_Projet/README.md) et le [Guide Dessin SUPFile](./Docs_Projet/Guide%20Dessin%20SUPFile_Architecture_and_Security.pdf).
+
+Le dossier `Images/` contient les schémas visuels (PNG) des diagrammes d'architecture du projet. Ces images illustrent les différents flux et processus de l'application.
 
 #### 🏗️ Architecture Globale
 
 Vue d'ensemble du système avec tous les composants (Frontend, Backend, Base de données, Stockage cloud, OAuth providers).
 
+<div align="center">
+
 ![Architecture Globale](./Images/1-Architecture%20Globale.png)
+
+</div>
 
 #### 🔐 Flux d'Authentification
 
 **Inscription** : Processus complet d'inscription d'un nouvel utilisateur.
 
+<div align="center">
+
 ![Flux d'Authentification - Inscription](./Images/2-Flux%20d'Authentification%20-%20Inscription.png)
+
+</div>
 
 **Authentification JWT** : Processus de connexion et génération de tokens JWT.
 
+<div align="center">
+
 ![Flux d'Authentification - Authentification JWT](./Images/2-Flux%20d'Authentification%20-%20Authentification%20JWT.png)
+
+</div>
 
 #### 🔑 Flux OAuth2 Complet
 
 Flux complet pour les trois providers OAuth2 (Google, GitHub, Microsoft) avec gestion des tokens temporaires.
 
-![Flux OAuth2 Complet](./Images/3-Flux%20OAuth2%20Complet%20-Google_GitHub_Microsoft.png)    
+<div align="center">
+
+![Flux OAuth2 Complet](./Images/3-Flux%20OAuth2%20Complet%20-Google_GitHub_Microsoft.png)
+
+</div>
 
 **Séquence OAuth2 Détaillée - Google** : Séquence détaillée du flux OAuth2 pour Google.
 
-![Séquence OAuth2 Détaillée - Google](./Images/Séquence%20OAuth2%20Détaillée%20-%20Google%20OAuth2.png)  
+<div align="center">
+
+![Séquence OAuth2 Détaillée - Google](./Images/Séquence%20OAuth2%20Détaillée%20-%20Google%20OAuth2.png)
+
+</div>  
 
 #### 📤 Flux d'Upload de Fichier
 
 Processus complet de téléchargement de fichiers : validation, upload vers Azure Blob Storage, enregistrement des métadonnées.
 
+<div align="center">
+
 ![Flux d'Upload de Fichier](./Images/Flux%20d'Upload%20de%20Fichier.png)
+
+</div>
 
 **Validation de Fichier** : Processus de validation des fichiers avant upload.
 
+<div align="center">
+
 ![Validation de Fichier](./Images/Validation%20de%20Fichier.png)
+
+</div>
 
 #### 📁 Flux de Gestion de Dossiers
 
 **Création et Navigation** : Processus de création de dossiers et navigation dans l'arborescence.
 
+<div align="center">
+
 ![Flux de Gestion de Dossiers - Création et Navigation](./Images/Flux%20de%20Gestion%20de%20Dossiers%20-%20Création%20et%20Navigation.png)
+
+</div>
 
 **Breadcrumbs** : Système de navigation avec fil d'Ariane.
 
+<div align="center">
+
 ![Flux de Gestion de Dossiers - Breadcrumbs](./Images/Flux%20de%20Gestion%20de%20Dossiers%20-%20Breadcrumbs.png)
+
+</div>
 
 #### 🗑️ Flux de Corbeille
 
 **États d'un Fichier** : Cycle de vie d'un fichier (actif, supprimé, restauré, supprimé définitivement).
 
+<div align="center">
+
 ![Flux de Corbeille - États d'un Fichier](./Images/Flux%20de%20Corbeille%20-%20%20États%20d'un%20Fichier.png)
+
+</div>
 
 **Soft Delete et Restauration** : Processus de suppression réversible et restauration.
 
+<div align="center">
+
 ![Flux de Corbeille - Soft Delete et Restauration](./Images/Flux%20de%20Corbeille%20-%20Soft%20Delete%20et%20Restauration.png)
+
+</div>
 
 #### 🔗 Flux de Partage
 
 Processus de partage de fichiers avec génération de liens publics, expiration et protection par mot de passe.
 
+<div align="center">
+
 ![Flux de Partage](./Images/Flux%20de%20Partage.png)
+
+</div>
 
 **Modèle de Partage** : Modèle de données pour le système de partage.
 
+<div align="center">
+
 ![Modèle de Partage](./Images/Modèle%20de%20Partage.png)
+
+</div>
 
 #### 💾 Architecture de Stockage
 
 Architecture multi-niveaux du stockage (PostgreSQL pour métadonnées, Azure Blob Storage pour fichiers binaires).
 
+<div align="center">
+
 ![Architecture de Stockage](./Images/Architecture%20de%20Stockage%20-%20Stockage%20Multi-Niveaux.png)
+
+</div>
 
 #### 🗄️ Modèle de Données
 
 **Schéma Entité-Relation (ERD)** : Modèle complet de la base de données avec toutes les relations.
 
+<div align="center">
+
 ![Modèle de Données - Schéma Entité-Relation](./Images/Modèle%20de%20Données%20-%20Schéma%20Entité-Relation.png "Modèle de Données - Schéma Entité-Relation")
+
+</div>
 
 #### 🔒 Sécurité
 
 **Protection contre les Codes Dupliqués** : Mécanisme de protection contre la réutilisation de codes OAuth2.
 
+<div align="center">
+
 ![Protection contre les Codes Dupliqués](./Images/Protection%20contre%20les%20Codes%20Dupliqués.png "Protection contre les Codes Dupliqués")
+
+</div>
 
 ---
 
@@ -482,6 +586,6 @@ Projet académique SUPINFO - Tous droits réservés
 
 **Fait avec ❤️ par l'équipe SUPFile**
 
-[🌐 Application Live](https://supfile-webapp.vercel.app) • [📚 Documentation](./Docs_Projet/DOCUMENTATION.md) • [📊 Diagrammes](./Images)
+[🌐 Application Live](https://supfile-webapp.vercel.app) • [📚 Documentation](./Docs_Projet/) • [📄 Guide PDF](./Docs_Projet/Guide%20Dessin%20SUPFile_Architecture_and_Security.pdf) • [📊 Diagrammes](./Images)
 
 </div>

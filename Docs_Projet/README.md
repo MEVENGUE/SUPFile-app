@@ -1,18 +1,52 @@
-# 📚 SUPFile - Documentation Complète
+# 📚 SUPFile - Documentation Technique Complète
 
-> Documentation technique complète du projet SUPFile - Système de stockage de fichiers cloud sécurisé
+> Documentation technique approfondie du projet SUPFile - Système de stockage de fichiers cloud sécurisé
+
+<div align="center">
+
+![Architecture Globale SUPFile](../Images/1-Architecture%20Globale.png)
+
+*Architecture complète du système SUPFile*
+
+</div>
 
 ## 📋 Table des Matières
 
-1. [Architecture](#architecture)
-2. [Fonctionnalités Détaillées](#fonctionnalités-détaillées)
-3. [Installation et Configuration](#installation-et-configuration)
-4. [Déploiement](#déploiement)
-5. [Authentification et OAuth2](#authentification-et-oauth2)
-6. [API Reference](#api-reference)
-7. [Sécurité](#sécurité)
-8. [Dépannage](#dépannage)
-9. [Roadmap](#roadmap)
+1. [Introduction au Projet](#-introduction-au-projet)
+2. [Architecture](#-architecture)
+3. [Fonctionnalités Détaillées](#-fonctionnalités-détaillées)
+4. [Installation et Configuration](#-installation-et-configuration)
+5. [Déploiement](#-déploiement)
+6. [Authentification et OAuth2](#-authentification-et-oauth2)
+7. [API Reference](#-api-reference)
+8. [Sécurité](#-sécurité)
+9. [Dépannage](#-dépannage)
+10. [Roadmap](#-roadmap)
+
+---
+
+## 🎯 Introduction au Projet
+
+### Contexte
+
+**SUPFile** est un projet académique développé dans le cadre du cursus SUPINFO. Il s'agit d'un système de stockage de fichiers cloud sécurisé, similaire à Dropbox, permettant aux utilisateurs de stocker, organiser, partager et gérer leurs fichiers de manière sécurisée dans le cloud.
+
+### Objectifs du Projet
+
+- ✅ Développer une application web moderne avec architecture client-serveur
+- ✅ Implémenter un système d'authentification robuste (JWT + OAuth2)
+- ✅ Gérer le stockage de fichiers dans le cloud (Azure Blob Storage)
+- ✅ Créer une interface utilisateur intuitive et responsive
+- ✅ Assurer la sécurité des données et des communications
+- ✅ Déployer l'application en production (Vercel + Railway)
+
+### Technologies Principales
+
+- **Frontend** : React 18, TypeScript, Vite
+- **Backend** : FastAPI, Python 3.11
+- **Base de données** : PostgreSQL
+- **Stockage** : Azure Blob Storage
+- **Déploiement** : Vercel (Frontend), Railway (Backend)
 
 ---
 
@@ -21,6 +55,12 @@
 ### Architecture Globale
 
 SUPFile suit une architecture **client-serveur** moderne avec séparation frontend/backend :
+
+<div align="center">
+
+![Architecture Globale](../Images/1-Architecture%20Globale.png)
+
+</div>
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -42,6 +82,14 @@ SUPFile suit une architecture **client-serveur** moderne avec séparation fronte
 │  Métadonnées   │            │  Fichiers binaires │
 └────────────────┘            └────────────────────┘
 ```
+
+### Architecture de Stockage Multi-Niveaux
+
+<div align="center">
+
+![Architecture de Stockage](../Images/Architecture%20de%20Stockage%20-%20Stockage%20Multi-Niveaux.png)
+
+</div>
 
 ### Structure du Projet
 
@@ -123,6 +171,14 @@ SUPFile/
 
 #### Flux d'Authentification
 
+**Inscription** : Processus complet d'inscription d'un nouvel utilisateur.
+
+<div align="center">
+
+![Flux d'Authentification - Inscription](../Images/2-Flux%20d'Authentification%20-%20Inscription.png)
+
+</div>
+
 1. **Inscription/Connexion** :
    ```
    Frontend → POST /api/v1/auth/register|login
@@ -131,6 +187,14 @@ SUPFile/
    Backend → Retour tokens
    Frontend → Stockage tokens (localStorage)
    ```
+
+**Authentification JWT** : Processus de connexion et génération de tokens JWT.
+
+<div align="center">
+
+![Flux d'Authentification - Authentification JWT](../Images/2-Flux%20d'Authentification%20-%20Authentification%20JWT.png)
+
+</div>
 
 2. **OAuth2** :
    ```
@@ -144,7 +208,47 @@ SUPFile/
    Frontend → Extraction tokens → Stockage
    ```
 
+**Flux OAuth2 Complet** : Flux pour les trois providers OAuth2 (Google, GitHub, Microsoft).
+
+<div align="center">
+
+![Flux OAuth2 Complet](../Images/3-Flux%20OAuth2%20Complet%20-Google_GitHub_Microsoft.png)
+
+</div>
+
+**Séquence OAuth2 Détaillée - Google** : Séquence détaillée du flux OAuth2 pour Google.
+
+<div align="center">
+
+![Séquence OAuth2 Détaillée - Google](../Images/Séquence%20OAuth2%20Détaillée%20-%20Google%20OAuth2.png)
+
+</div>
+
+**Protection contre les Codes Dupliqués** : Mécanisme de protection contre la réutilisation de codes OAuth2.
+
+<div align="center">
+
+![Protection contre les Codes Dupliqués](../Images/Protection%20contre%20les%20Codes%20Dupliqués.png)
+
+</div>
+
 #### Flux d'Upload de Fichier
+
+**Flux d'Upload Complet** : Processus complet de téléchargement de fichiers.
+
+<div align="center">
+
+![Flux d'Upload de Fichier](../Images/Flux%20d'Upload%20de%20Fichier.png)
+
+</div>
+
+**Validation de Fichier** : Processus de validation des fichiers avant upload.
+
+<div align="center">
+
+![Validation de Fichier](../Images/Validation%20de%20Fichier.png)
+
+</div>
 
 1. **Upload** :
    ```
@@ -169,6 +273,22 @@ SUPFile/
 
 #### Flux de Gestion de Dossiers
 
+**Création et Navigation** : Processus de création de dossiers et navigation dans l'arborescence.
+
+<div align="center">
+
+![Flux de Gestion de Dossiers - Création et Navigation](../Images/Flux%20de%20Gestion%20de%20Dossiers%20-%20Création%20et%20Navigation.png)
+
+</div>
+
+**Breadcrumbs** : Système de navigation avec fil d'Ariane.
+
+<div align="center">
+
+![Flux de Gestion de Dossiers - Breadcrumbs](../Images/Flux%20de%20Gestion%20de%20Dossiers%20-%20Breadcrumbs.png)
+
+</div>
+
 1. **Création** :
    ```
    Frontend → POST /api/v1/folders
@@ -187,6 +307,22 @@ SUPFile/
    ```
 
 #### Flux de Corbeille
+
+**États d'un Fichier** : Cycle de vie d'un fichier (actif, supprimé, restauré, supprimé définitivement).
+
+<div align="center">
+
+![Flux de Corbeille - États d'un Fichier](../Images/Flux%20de%20Corbeille%20-%20%20États%20d'un%20Fichier.png)
+
+</div>
+
+**Soft Delete et Restauration** : Processus de suppression réversible et restauration.
+
+<div align="center">
+
+![Flux de Corbeille - Soft Delete et Restauration](../Images/Flux%20de%20Corbeille%20-%20Soft%20Delete%20et%20Restauration.png)
+
+</div>
 
 1. **Suppression (Soft Delete)** :
    ```
@@ -274,6 +410,16 @@ SUPFile/
 - **Déplacement** : Changement parent_id
 - **Suppression** : Soft delete (comme fichiers)
 
+#### Modèle de Données
+
+**Schéma Entité-Relation (ERD)** : Modèle complet de la base de données avec toutes les relations.
+
+<div align="center">
+
+![Modèle de Données - Schéma Entité-Relation](../Images/Modèle%20de%20Données%20-%20Schéma%20Entité-Relation.png)
+
+</div>
+
 ### 🗑️ Gestion de la Corbeille
 
 #### Soft Delete
@@ -298,6 +444,22 @@ SUPFile/
 - **Accès** : Sans authentification
 
 #### Flux de Partage
+
+**Flux de Partage Complet** : Processus de partage de fichiers avec génération de liens publics.
+
+<div align="center">
+
+![Flux de Partage](../Images/Flux%20de%20Partage.png)
+
+</div>
+
+**Modèle de Partage** : Modèle de données pour le système de partage.
+
+<div align="center">
+
+![Modèle de Partage](../Images/Modèle%20de%20Partage.png)
+
+</div>
 
 1. Création lien → Génération token
 2. Partage URL → `/share/{token}`
