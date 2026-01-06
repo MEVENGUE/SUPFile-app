@@ -20,7 +20,9 @@
 
 <div align="center">
 
-*Interface SUPFile*
+![Interface SUPFile](./Images/Architecture%20SUPFile%20expliquée%20simplement.png)
+
+*Vue d'ensemble simplifiée de l'architecture SUPFile*
 
 </div>
 
@@ -56,9 +58,6 @@
 *Dashboard interactif avec statistiques et visualisations*
 
 </div>
-
-<img width="1893" height="992" alt="Capture d&#39;écran 2026-01-04 231411" src="https://github.com/user-attachments/assets/956fac15-0330-4e25-9a1c-b6e57627d762" />
-
 
 
 ### ✨ Points Forts
