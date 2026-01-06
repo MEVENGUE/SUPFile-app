@@ -1100,4 +1100,4 @@ Statistiques du dashboard
 
 ---
 
-**Dernière mise à jour** : Janvier 2025
+**Dernière mise à jour** : Janvier 2026
