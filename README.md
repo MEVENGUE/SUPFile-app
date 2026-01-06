@@ -53,8 +53,6 @@
 
 <div align="center">
 
-![Interface Dashboard](./Images/Graphique%20Projet.png)
-
 *Dashboard interactif avec statistiques et visualisations*
 
 </div>
