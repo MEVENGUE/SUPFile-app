@@ -20,7 +20,7 @@
 
 <div align="center">
 
-![Interface SUPFile](./Images/Architecture%20SUPFile%20expliquée%20simplement.png)
+![Interface SUPFile]
 
 *Vue d'ensemble simplifiée de l'architecture SUPFile*
 
