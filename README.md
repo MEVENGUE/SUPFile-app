@@ -316,7 +316,7 @@ SUPFile/
 ```bash
 # 1. Cloner le projet
 git clone https://github.com/MEVENGUE/SUPFile......git
-cd SUPFile-Vercel-App
+cd SUPFile......
 
 # 2. Créer le fichier .env
 cp .env.example .env
